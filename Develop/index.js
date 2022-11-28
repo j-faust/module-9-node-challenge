@@ -1,11 +1,11 @@
 // TODO: Include packages needed for this application
-const inquirerPkg = require('inquirer');
-const fsPkg = require('fs');
-const generateMD = require('./utils/generateMarkdown');
+const inquirer = require('inquirer');
+const fs = require('fs');
+const generateMD = require('./utils/generateMarkdown.js');
 
 // TODO: Create an array of questions for user input
-inquirerPkg
-  .prompt([
+const questions =
+[
     {
         type: 'input',
         name: 'title',
@@ -47,22 +47,34 @@ inquirerPkg
         message: 'Please Enter Your Email Address:'
     },
     {
-        type: 'checkbox',
+        type: 'list',
         name: 'license',
         message: 'Please choose any licenses for your Application:',
         choices: ['None', 'Apache License 2.0', 'GNU General Public License v3.0', 'MIT License', 'BSD 2-Clause "Simplified" License',
         'BSD 3-Clause "New" or "Revised" License', 'Boost Software License 1.0', 'Creative Commons Zero v1.0 Universal', 'Eclipse Public License 2.0',
         'GNU Affero General Public License v3.0', 'GNU General Public License v2.0', 'GNU Lesser General Public License v2.1', 'Mozilla Public License 2.0', 'The Unlicense']
     }
-  ])
-   .then((data)
-        )
+  ]
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    var dataStr = generateMD(data);
+    fs.writeFile(fileName, dataStr, (err) => 
+    err ? console.log(err) : console.log('Thank you, your README file has been generated!')
+    );
+
+
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer
+    .prompt(questions)
+    .then((data) => { 
+    writeToFile("professionalREADME.md", data);
+    })
+
+}
 
 // Function call to initialize app
 init();
