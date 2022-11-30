@@ -50,8 +50,7 @@ const questions =
         type: 'list',
         name: 'license',
         message: 'Please choose any licenses for your Application:',
-        choices: ['None', 'Apache License 2.0', 'GNU General Public License v3.0', 'MIT License', 'Creative Commons Zero v1.0 Universal', 'Eclipse Public License 2.0',
-        'Mozilla Public License 2.0', 'The Unlicense']
+        choices: ['None', 'Apache2.0', 'GNU', 'MIT', 'CreativeCommonsv1.0', 'MozillaPublicLicense2.0', 'TheUnlicense']
     }
   ]
 
