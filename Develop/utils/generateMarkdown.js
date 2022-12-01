@@ -2,6 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   
+  // if statment to display the license badge based on the user's selection
   if(license === "None"){
     return ``
   } else {
@@ -13,6 +14,7 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
 
+  // if statment to generate the link to the license page based on what the user selects
 if(license === 'Apache2.0') {
     return `https://www.apache.org/licenses/LICENSE-2.0`
   } else if(license === 'GNU') {
@@ -34,6 +36,8 @@ if(license === 'Apache2.0') {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
+
+  // if statement to generate the license section for the README file to display the license and the license link
   if(license === "None"){
      ``
   } else {
@@ -45,6 +49,7 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
+
   return `# ${data.title}  
 
   ${renderLicenseBadge(data.license)}

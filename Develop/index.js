@@ -68,7 +68,7 @@ function init() {
     inquirer
     .prompt(questions)
     .then((data) => { 
-    writeToFile("ProfessionalREADME.md", data);
+    writeToFile("SampleREADME.md", data);
     })
 }
 // Function call to initialize app
