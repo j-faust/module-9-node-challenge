@@ -21,7 +21,7 @@ In the 'generateMarkdown.js' file:
 
 ## Links 
 
-Link to Demo Video: ()[]
+Link to Demo Video: (Video Demo)[]
 
 GitHub Link: (GitHub)[https://github.com/j-faust/module-9-node-challenge]
 
