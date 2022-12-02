@@ -49,6 +49,7 @@ function renderLicenseSection(license) {
 }
 
 // TODO: Create a function to generate markdown for README
+// Generates README file calling user inputs into the correct sections for the README file.  
 function generateMarkdown(data) {
 
   return `
