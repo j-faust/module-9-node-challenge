@@ -29,7 +29,7 @@ const questions =
     {
         type: 'input',
         name: 'contribution',
-        message: 'Please Any Enter Contribution Guidelines:'
+        message: 'Who helped in contributing to this project?'
     },
     {
         type: 'input',
@@ -68,7 +68,7 @@ function init() {
     inquirer
     .prompt(questions)
     .then((data) => { 
-    writeToFile("SampleREADME.md", data);
+    writeToFile("GeneratedREADME.md", data);
     })
 }
 // Function call to initialize app

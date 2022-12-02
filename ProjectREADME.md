@@ -1,6 +1,15 @@
 # Module 9 Challenge - Professional README Generator - Node.JS
 
-## Project Description 
+# Table of Contents
+
+- [Project Description](#description)
+- [Installation](#installation)
+- [NodeJS](#node)
+- [Links](#links)
+- [Demo](#demo)
+- [Questions](#questions)
+
+## Description 
 
 The purpose of this project is to generate a professional README file using Node.JS to prompt the user for questions required to generate the README file.  The also required using NPM and the NPM Inquirer Package to assist with prompting the user for the information. 
 
@@ -8,7 +17,7 @@ The purpose of this project is to generate a professional README file using Node
 
 This project requires Node.JS NPM Package and NPM Inquirer to be installed for this application to work.
 
-## Node JS
+## Node
 
 Added Questions array to store prompts that the user will need to answer. In addition the following functionality was added to the index.JS file: 
     * Utilized the File Storage ('fs') to write the README file for the user.  
@@ -21,9 +30,23 @@ In the 'generateMarkdown.js' file:
 
 ## Links 
 
-Link to Demo Video: (Video Demo)[]
+Link to Demo Video: [Video Demo]()
 
-GitHub Link: (GitHub)[https://github.com/j-faust/module-9-node-challenge]
+GitHub Link: [GitHub](https://github.com/j-faust/module-9-node-challenge)
 
 ## DEMO
 
+
+
+
+
+
+
+
+
+
+## Questions
+
+Please vist my [GitHub](https://github.com/j-faust) to see more projects 
+
+Please [Email](mailto:jfaust16@gmail.com) with any questions
