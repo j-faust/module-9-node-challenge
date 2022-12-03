@@ -30,19 +30,13 @@ In the 'generateMarkdown.js' file:
 
 ## Links 
 
-Link to Demo Video: [Video Demo]()
+Link to Demo Video: [Video Demo](https://drive.google.com/file/d/1GadAscBtBD1M7djZfx_HAAz0xr7P_jxQ/view)
 
 GitHub Link: [GitHub](https://github.com/j-faust/module-9-node-challenge)
 
 ## DEMO
 
-
-
-
-
-
-
-
+![DemoGif](./Develop/images/demo.gif)
 
 
 ## Questions
